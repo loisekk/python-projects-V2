@@ -42,11 +42,6 @@ pytube
 
 tkinter (built-in with Python)
 
-📂 Project Structure
-youtube-downloader/
-│
-├── main.py
-└── README.md
 
 ⚙️ Installation
 1️⃣ Clone the repository
@@ -105,3 +100,4 @@ Add playlist download support
 👨‍💻 Author
 
 Yash Brahmankar
+
