@@ -17,21 +17,15 @@ This project is a lightweight desktop utility built using:
 Users can:
 
 Enter a YouTube video URL
-
 Choose a download directory
-
 Automatically download the video in the highest available MP4 resolution
 
 🚀 Features
 
 ✅ Download YouTube videos in highest available resolution
-
 ✅ Simple terminal-based interaction
-
 ✅ Folder selection via GUI dialog
-
 ✅ Error handling for invalid links or download issues
-
 ✅ Lightweight and beginner-friendly codebase
 
 🛠 Technologies Used
@@ -100,4 +94,5 @@ Add playlist download support
 👨‍💻 Author
 
 Yash Brahmankar
+
 
