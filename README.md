@@ -1,199 +1,244 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=200&section=header&text=YouTube%20Video%20Downloader&fontSize=40&fontColor=ffffff&fontAlignY=38&desc=Simple%20%7C%20Fast%20%7C%20Lightweight&descAlignY=58&descAlign=50" width="100%"/>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=700&lines=📺+YouTube-Search-Quirer;Search.+Click.+Watch.;Zero+Shorts.+Zero+Noise.;Powered+by+Selenium+%2B+AI)](https://git.io/typing-svg)
 
 <br/>
 
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![pytube](https://img.shields.io/badge/Library-pytube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://pytube.io)
-[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-4CAF50?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Streamlit-1.37-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+<img src="https://img.shields.io/badge/Selenium-4.22-43B02A?style=for-the-badge&logo=selenium&logoColor=white"/>
+<img src="https://img.shields.io/badge/YouTube%20Data%20API-v3-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
 
-<br/>
+<br/><br/>
 
-> **A lightweight Python desktop utility to download YouTube videos in the highest available MP4 resolution — with a clean folder-selection dialog and robust error handling.**
-
-<br/>
+> **A YouTube automation & clone toolkit — search smarter, watch faster, skip the noise.**
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Error Handling](#-error-handling)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [Author](#-author)
-- [License](#-license)
+## 🧠 What Is This?
 
----
+**YouTube-Search-Quirer** is a multi-mode YouTube automation project built with Python, Selenium, Streamlit, and the YouTube Data API v3. It gives you a faster, cleaner YouTube experience — without algorithmic noise, without Shorts, and without friction.
 
-## 🎯 Overview
+It ships in **three distinct modes**, each serving a different use case:
 
-**YouTube Video Downloader** is a beginner-friendly yet capable Python utility that simplifies downloading YouTube videos to your local machine. It combines the power of `pytube` for video fetching with `tkinter`'s native folder dialog for a smooth, minimal user experience — no browser extensions, no bloated software.
+<br/>
 
-Built for developers, students, and power users who prefer a clean, code-first tool over third-party downloaders.
+<div align="center">
+
+| 🔢 | Mode | Entry Point | Description |
+|:--:|------|-------------|-------------|
+| 01 | 🖥️ **Terminal Agent** | `main.py` | InquirerPy CLI — pick genre, year, GP, anime, game, or topic and auto-play |
+| 02 | 🌐 **Streamlit Smart Watch** | `main_v1.py` | Minimalist UI that auto-searches and opens the first full video via Selenium |
+| 03 | 📺 **YouTube Clone UI** | `app2.py` | Full YouTube-style dark clone with video grid, Shorts, voice search & sidebar |
+
+</div>
+
+<br/>
 
 ---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## ✨ Features
 
-| Feature | Description |
-|---|---|
-| 🎥 **Highest Resolution** | Automatically selects the best available MP4 stream |
-| 🖥️ **GUI Folder Picker** | Native OS dialog via `tkinter` for save location selection |
-| ⚡ **Fast & Lightweight** | No heavy frameworks — minimal dependencies |
-| 🛡️ **Error Handling** | Gracefully handles invalid URLs, network issues, and bad paths |
-| 🐍 **Beginner Friendly** | Clean, readable codebase — great for learning |
+<br/>
 
----
-
-## 🛠 Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| **Python 3.x** | Core programming language |
-| **pytube** | YouTube video streaming & downloading |
-| **tkinter** | GUI folder selection dialog (built-in with Python) |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- Python 3.x — [Download here](https://www.python.org/downloads/)
-- pip (comes with Python)
-
-### Installation
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/loisekk/youtube-downloader.git
-cd youtube-downloader
+```
+🎯  Category-driven Search    →   F1 / Anime / Gaming / Movies / Web Series / Cartoons / Study
+⚡  Shorts-Free Playback      →   Automation skips Shorts and plays full-length videos only
+🎙️  Voice Search              →   Speak your query via microphone using SpeechRecognition
+📺  YouTube Clone UI          →   Dark-mode interface with video grid, tag filters & sidebar
+🔌  YouTube Data API v3       →   Real video and Shorts search powered by Google APIs
+🗄️  SQLite Persistence        →   Watch-later list, playlists, and user auth — all local
+🤖  Selenium Automation       →   Launches Chrome, searches YouTube, clicks the first result
+💡  AI/LLM-Ready              →   OpenAI + LangChain included for future agent upgrades
 ```
 
-**2. Install the required dependency**
-
-```bash
-pip install pytube
-```
-
-> `tkinter` comes pre-installed with all standard Python distributions — no extra setup needed.
+<br/>
 
 ---
 
-## ▶️ Usage
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-Run the script from your terminal:
+## 🗂️ Project Structure
 
+```bash
+📦 YouTube-Search-Quirer/
+│
+├── 🧠 main.py              # Terminal agent — InquirerPy category flow + Selenium playback
+├── 🌐 main_v1.py           # Streamlit Smart Watch UI
+├── 📺 app2.py              # Full YouTube Clone UI (API-powered)
+│
+├── 🔌 youtube_api.py       # YouTube Data API v3 — search_videos() & search_shorts()
+├── ▶️  youtube_player.py    # Selenium playback module
+├── 🎙️ voice_search.py      # Microphone voice input via SpeechRecognition
+├── 💡 recommender.py       # Recommendation engine (history-based, expandable)
+│
+├── 🔐 auth.py              # SQLite user authentication — register / login
+├── 🗄️ database.py          # SQLite watch-later & playlists storage
+│
+├── 📋 requirements.txt     # All Python dependencies
+└── 📖 README.md
+```
+
+---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+## ⚙️ Setup & Installation
+
+### `Step 1` — Clone the repo
+
+```bash
+git clone https://github.com/loisekk/YouTube-Search-Quirer.git
+cd YouTube-Search-Quirer
+```
+
+### `Step 2` — Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### `Step 3` — Add your YouTube API Key
+
+Open `youtube_api.py` and replace:
+
+```python
+API_KEY = "YOUR_YOUTUBE_DATA_API_KEY_HERE"
+```
+
+> 🔑 Get your free key at [Google Cloud Console](https://console.cloud.google.com/) → Enable **YouTube Data API v3**
+
+### `Step 4` — ChromeDriver (Selenium modes only)
+
+```bash
+pip install webdriver-manager
+```
+
+> ✅ ChromeDriver is auto-managed. Just make sure **Google Chrome** is installed.
+
+---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+## 🚀 Usage
+
+<br/>
+
+**▶ Terminal Agent**
 ```bash
 python main.py
 ```
+> Follow prompts → Select category → Sub-category → Auto-plays in Chrome
 
-**Workflow:**
+<br/>
 
+**▶ Streamlit Smart Watch**
+```bash
+streamlit run main_v1.py
 ```
-1. A prompt appears → Enter your YouTube video URL
-2. A folder dialog opens → Select your desired download location
-3. Download begins automatically → Progress logged to terminal
-4. ✅ Done! Video saved to your chosen folder.
-```
 
-**Example terminal output:**
+<br/>
 
-```
-Please enter a YouTube URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-Started download...
-Video downloaded successfully!
+**▶ YouTube Clone UI**
+```bash
+streamlit run app2.py
 ```
 
 ---
 
-## 📁 Project Structure
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+## 🛠️ Tech Stack
+
+<br/>
+
+<div align="center">
+
+| Layer | Technology |
+|:------|:-----------|
+| 🖥️ UI Framework | Streamlit |
+| 🤖 Browser Automation | Selenium + WebDriver Manager |
+| 📡 Video Data | YouTube Data API v3 |
+| 🎙️ Voice Input | SpeechRecognition |
+| 💬 CLI Prompts | InquirerPy |
+| 🗄️ Database | SQLite3 |
+| 🌐 HTTP / Async | requests, aiohttp |
+| 🔐 Environment | python-dotenv |
+| 🧠 Future AI Layer | OpenAI, LangChain |
+
+</div>
+
+<br/>
+
+---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+## 🗺️ Roadmap
 
 ```
-youtube-downloader/
-│
-├── main.py          # Entry point — handles input, download logic & GUI dialog
-├── README.md        # Project documentation
-└── requirements.txt # Project dependencies
+ ✅  Terminal agent with category flow
+ ✅  Streamlit Smart Watch UI
+ ✅  YouTube Clone with API integration
+ ✅  Voice search support
+ 🔲  LLM-powered natural language query processing
+ 🔲  Watch history tracking & smart recommendations
+ 🔲  Playlist management UI
+ 🔲  User login with SHA-256 hashed passwords
 ```
 
 ---
 
-## 🔐 Error Handling
-
-The application gracefully handles the following failure scenarios:
-
-- ❌ **Invalid YouTube URL** — Notifies the user and exits cleanly
-- 🌐 **Network/Connection Issues** — Catches exceptions and prints a helpful message
-- 📂 **Invalid Save Location** — Handles bad or inaccessible directory paths
-- ⛔ **Download Interruption** — Catches mid-download failures without crashing
-
-All errors are printed directly to the terminal for easy debugging.
-
----
-
-## 📈 Roadmap
-
-- [ ] Add real-time download progress bar
-- [ ] Resolution selector (144p → 4K)
-- [ ] Full GUI app with input fields & buttons
-- [ ] Audio-only download (MP3 extraction)
-- [ ] Playlist & batch download support
-- [ ] Dark mode UI
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 👨‍💻 Author
+
+<br/>
 
 <div align="center">
 
 **Yash Brahmankar**
+<br/>
+B.Tech AI & ML · OIST (2024–2028) · Oracle & Cisco Certified
 
-[![GitHub](https://img.shields.io/badge/GitHub-loisekk-181717?style=for-the-badge&logo=github)](https://github.com/loisekk)
-[![Email](https://img.shields.io/badge/Email-yashbrahmankar95%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yashbrahmankar95@gmail.com)
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-loisekk-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/loisekk)
+[![Email](https://img.shields.io/badge/Gmail-yashbrahmankar95@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yashbrahmankar95@gmail.com)
 
 </div>
 
+<br/>
+
 ---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) — feel free to use, modify, and distribute.
+This project is licensed under the **[MIT License](LICENSE)** — free to use, modify, and distribute.
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=120&section=footer" width="100%"/>
+<br/>
 
-*Made with ❤️ by Yash Brahmankar*
+![](https://komarev.com/ghpvc/?username=loisekk&color=FF0000&style=for-the-badge&label=PROFILE+VIEWS)
+
+<br/>
+
+*Built for learning, automation, and portfolio-level presentation* ⚡
+
+<br/>
+
+**If you found this useful, consider giving it a ⭐**
 
 </div>
